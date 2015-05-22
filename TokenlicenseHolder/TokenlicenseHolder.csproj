@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3EEA4DE6-E1E1-4618-9C4B-4E4136449CE5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MusicPlayerTokenDealer</RootNamespace>
+    <AssemblyName>MusicPlayerTokenDealer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Eufory.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCopyleftTokenSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCopyleftTokenSettings.Designer.cs">
+      <DependentUpon>frmCopyleftTokenSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCopyleftTokenSettingsAsian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCopyleftTokenSettingsAsian.designer.cs">
+      <DependentUpon>frmCopyleftTokenSettingsAsian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCopyrightTokenSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCopyrightTokenSettings.Designer.cs">
+      <DependentUpon>frmCopyrightTokenSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTokenDistributionAsian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTokenDistributionAsian.designer.cs">
+      <DependentUpon>frmTokenDistributionAsian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTokenDistributionCopyleft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTokenDistributionCopyleft.Designer.cs">
+      <DependentUpon>frmTokenDistributionCopyleft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTokenDistributionCopyright.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTokenDistributionCopyright.Designer.cs">
+      <DependentUpon>frmTokenDistributionCopyright.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDealerAdministrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDealerAdministrator.Designer.cs">
+      <DependentUpon>frmDealerAdministrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDealerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDealerLogin.Designer.cs">
+      <DependentUpon>frmDealerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gblClass.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaticClass.cs" />
+    <EmbeddedResource Include="frmCopyleftTokenSettings.resx">
+      <DependentUpon>frmCopyleftTokenSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCopyleftTokenSettingsAsian.resx">
+      <DependentUpon>frmCopyleftTokenSettingsAsian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCopyrightTokenSettings.resx">
+      <DependentUpon>frmCopyrightTokenSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTokenDistributionAsian.resx">
+      <DependentUpon>frmTokenDistributionAsian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTokenDistributionCopyleft.resx">
+      <DependentUpon>frmTokenDistributionCopyleft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTokenDistributionCopyright.resx">
+      <DependentUpon>frmTokenDistributionCopyright.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDealerAdministrator.resx">
+      <DependentUpon>frmDealerAdministrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDealerLogin.resx">
+      <DependentUpon>frmDealerLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundGraphics.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Name_dealer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Eufory.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
